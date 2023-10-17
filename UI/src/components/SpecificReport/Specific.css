@@ -1,0 +1,30 @@
+.formReport {
+  width: 400px;
+  height: auto;
+  background: #fff;
+  border-radius: 20%;
+  position: fixed;
+  top: 0%;
+  visibility: visible;
+  left: 0%;
+  transform: translate(125%, 50%) scale(1);
+  box-shadow: -1px -1px 1px 1px rgba(1, 53, 82, 0.9);
+  text-align: center;
+  padding: 0 30px 30px;
+  transition: transform 0.4s, top 0.4s;
+}
+.formReport img{
+  width: 100px;
+  margin-top: -50px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  background-color: #fff;
+}
+.spanReport{
+  font-weight: bolder;
+  color: rgba(1, 53, 82, 0.9);
+}
+.formReport h2{
+  color: rgba(1, 53, 82, 0.9);
+}
+

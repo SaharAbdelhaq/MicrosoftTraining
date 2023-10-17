@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --linear-grad: linear-gradient(to right, #141E30, #537fb0);
+  --grad-clr1: #141E30;
+  --grad-clr2: #537fb0;
+  --blueBerg:linear-gradient( #141E30, #537fb0);
+}
+
+.allComponent {
+  padding-top: 20px;
+  padding-bottom: auto;
+  min-height: 100vh;
+  background: #f7faff;
+  display: flex;
+  place-content: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.Form_Container {
+  position: absolute;
+  width: 950px;
+  height: 700px;
+  background-color: #fff;
+  box-shadow: 25px 30px 55px #555755;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.form-container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:60%;
+  height: 100%;
+  padding: 0px ;
+  transition: all 0.6s ease-in-out;
+  font-size: medium;
+  
+}
+
+
+
+#M {
+  display: inline-block;
+}
+
+#F {
+  display: inline-block;
+}
+
+.sign-up-container {
+
+  opacity: 0;
+  z-index: 1;
+}
+
+.sign-in-container {
+  z-index: 1;
+  
+}
+
+.form {
+  margin-top: 10px;
+  height: 100%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+#Address {
+  width: 75%;
+  margin-left: 11px;
+  background-color: transparent;
+}
+
+.H1 {
+  color: var(--grad-clr1);
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.infield {
+  position: relative;
+  margin: 3px;
+  width: 100%;
+}
+
+#business-type{
+background-color: var(--grad-clr2);
+border-radius:20px;
+color: #FFF ;
+border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+content: "";
+font-size: 100;
+text-align: center;
+height: 30px;
+width: 150px;
+margin-left: 2%;
+}
+.business-owner-fields{
+width: 100% !important;
+}
+
+.text{
+width: 100%;
+padding: 12px 5px;
+background-color: #f3f3f3;
+border: none;
+outline: none;
+}
+
+.button{
+border-radius: 20px;
+border: 1px solid var(--grad-clr1);
+background: var(--linear-grad);
+color: #FFF;
+font-size: 12px;
+font-weight: bold;
+padding: 12px 45px;
+letter-spacing: 1px;
+text-transform: uppercase;
+}
+.form-container button{
+margin-top: 20px;
+transition: all 80ms ease-in;
+}
+.form-container button:hover{
+background: #fff;
+color: var(--grad-clr1);
+}
+.overlay-container{
+position: absolute;
+align-items: center;
+text-align: center !important;
+top:0;
+left: 60%;
+width: 40%;
+height: 100%;
+overflow: hidden;
+transition: all 0.6s ease-in-out;
+z-index: 9;
+}
+#SignUp{
+cursor: pointer;
+background: var(--blueBerg);
+}
+.Fname{
+display: inline-block;
+width: 43% !important;
+}
+.Lname{
+display: inline-block;
+width: 46% !important;
+margin-left: 15px;
+}
+.select{
+display:block;
+
+margin-top: 5px;
+}
+.selectOne{
+  display:flex;
+  width: 100%;
+}
+.addressLabel{
+  margin-top: 10px;
+}
+
+.popup{
+  width: 400px;
+  background: #fff;
+  border-radius: 6px;
+  position: absolute;
+  top: 50%;
+  visibility: hidden;
+  left:50%;
+  transform: translate(-50%,-50%) scale(.1);
+  text-align: center;
+  padding: 0 30px 30px;
+  transition: transform .4s,top 0.4s;
+}
+.open-popup{
+  visibility: visible;
+  transform: translate(-50%,-50%) scale(1) ;
+}
+.popup img{
+  width: 100px;
+  margin-top: -50px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.popup h2{
+  color: black;
+  font-size: 38px;
+  font-weight: 500;
+  margin: 30px 0 10px;
+}
+
+.popup1{
+  width: 400px;
+  background: #fff;
+  border-radius: 6px;
+  position: absolute;
+  top: 50%;
+  visibility: hidden;
+  left:50%;
+  transform: translate(-50%,-50%) scale(.1);
+  text-align: center;
+  padding: 0 30px 30px;
+  transition: transform .4s,top 0.4s;
+}
+.open-popup1{
+  visibility: visible;
+  transform: translate(-50%,-50%) scale(1) ;
+}
+.popup1 img{
+  width: 100px;
+  margin-top: -50px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.popup1 h2{
+  color: black;
+  font-size: 38px;
+  font-weight: 500;
+  margin: 30px 0 10px;
+}
+
+
+
+
+
+.selecttwo{
+display: inline-block;
+width: 70%;
+height: auto;
+margin-left: 12px;
+overflow-wrap: scroll;
+}
+.optionsForBusiness{
+  background-color: red !important;
+}
+
+.selectType{
+display: inline-block;
+width: 100%;
+margin-bottom: 5px;
+}
+.overlay{
+position: relative;
+background: var(--blueBerg);
+color: #FFF;
+left: -180%;
+height: 100%;
+width: 280%;
+transition: all 0.6ms ease-in-out;
+
+}
+.overlay-panel{
+position: absolute;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+text-align: center;
+height: 100%;
+width: 300px;
+transition: all 0.6s ease-in-out;
+}
+.overlay-left{
+right: 60%;
+transform: translateX(-12px);
+}
+.overlay-right{
+right: 0;
+transform: translateX(0%);
+}
+.overlay-panel h1{
+color: #FFF;
+margin-bottom: 50px;
+}
+.p{
+font-size: 14px;
+font-weight: 300;
+line-height: 20px;
+letter-spacing: 0.5px;
+margin: 25px 0px 35px;
+text-align: center !important;
+}
+.overlay-panel button{
+border: none;
+background-color: transparent;
+}
+.right-panel-active .overlay-container{
+transform: translateX(-150%);
+}
+.right-panel-active .overlay{
+transform: translateX(50%);
+}
+.right-panel-active .overlay-left{
+transform: translateX(100%);
+}
+.right-panel-active .overlay-right{
+    transform: translateX(35%);
+}
+.right-panel-active .overlay-panel{
+    transform: translateX(25%);
+    opacity: 1;
+    z-index: 5;
+    animation: show 0.6s;
+}
+.right-panel-active .sign-up-container{
+    transform: translateX(66.7%);
+    opacity: 1;
+    z-index: 5;
+    animation:all show 0.6s;
+}
+.right-panel-active .sign-in-container{
+    transform: translateX(-15%);
+    opacity: 0;
+    z-index: 5;
+    animation:all show 0.6s;
+}
+
+@keyframes show{
+    0%,50%{
+        opacity: 0;
+        z-index: 1;
+    }
+    50.1%,100%{
+        opacity: 1;
+        z-index: 5;
+    }
+}
+
+
+
+

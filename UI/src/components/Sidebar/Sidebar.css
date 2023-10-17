@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap");
+
+:root {
+  --white-light: rgba(255, 255, 255, 0.5);
+  --alice-blue: #f8f9fa;
+  --carribean-green: #144e5a;
+  --gray: #ededed;
+}
+
+.sidebar {
+  background: #fff;
+  min-width: 110px;
+  width: 250px;
+  padding: 30px 0;
+  transition: all 0.5s ease;
+  height: auto;
+}
+
+.sidebar .profile {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.sidebar .profile img {
+  width: 140px;
+  height: 140px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 50%;
+}
+
+
+.sidebar .profile h3 {
+  color: black;
+  margin: 10px 0 5px;
+}
+
+.sidebar .profile p {
+  color: #666;
+  font-size: 14px;
+}
+
+.sidebar ul li a {
+  padding: 13px 30px;
+  display: block;
+  border-bottom: 1px solid #ececec;
+  color: #666;
+  font-size: 14px;
+  position: relative;
+}
+
+.sidebar ul li a .icon {
+  color: #c7cfdb;
+  width: 30px;
+  display: inline-block;
+}
+
+.sidebar ul li a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 3px;
+  height: 100%;
+  background: var(--carribean-green);
+  display: none;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+  color: var(--carribean-green);
+  background: linear-gradient(to right, #fff, #f6edfc);
+}
+.sidebar ul li a:hover .icon,
+.sidebar ul li a.active .icon {
+  color: var(--carribean-green);
+}
+
+.sidebar ul li a:hover:before,
+.sidebar ul li a.active:before {
+  display: block;
+}
+
+/********************************************************************************************************************/
+
+/* Media Queries */
+@media screen and (min-width: 992px) {
+  .product-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: calc(100% - 225px);
+    margin-left: 225px;
+    transition: all 0.5s ease;
+  }
+  .product-col-r-bottom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .product-items {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .product {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+  .products .text-light {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1336px) {
+  .product-items {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .product-collection-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .flex {
+    height: 60vh;
+  }
+  .product-col-left {
+    height: 121.5vh;
+  }
+}
+
+/* ******************* */
+/* added by mosab */
+/* ******************* */
+.sidebar-btn {
+  padding: 13px 30px;
+  display: block;
+  height: 46px;
+  width: 210px;
+  border: none;
+  background-color: transparent;
+  color: #666;
+  font-size: 14px;
+  position: relative;
+  text-align: left;
+  cursor: pointer;
+}
+
+.sidebar-btn .icon {
+  color: #c7cfdb;
+  width: 30px;
+  display: inline-block;
+}
+
+.sidebar-btn:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 3px;
+  height: 100%;
+  background: var(--carribean-green);
+  display: none;
+}
+
+.sidebar-btn:hover,
+.sidebar-btn.active {
+  color: var(--carribean-green);
+  background: linear-gradient(to right, #fff, #f6edfc);
+}
+
+.sidebar-btn:hover .icon,
+.sidebar-btn.active .icon {
+  color: var(--carribean-green);
+}
+
+.sidebar-btn:hover:before,
+.sidebar-btn.active:before {
+  display: block;
+}

@@ -1,0 +1,103 @@
+.container24-buisiness24 {
+  margin-right: auto;
+  margin-left: auto;
+  width: 1200px;
+  align-content: center;
+  max-width: 1200px;
+  overflow: hidden;
+  padding: 60px 0;
+}
+.container24-buisiness24 .main-card24 {
+  alignment: center;
+  align-content: center;
+  justify-content: space-evenly;
+  width: 190%;
+  transition: 1s;
+}
+
+#two2:checked ~ .main-card24 {
+  margin-left: -100%;
+}
+.container24-buisiness24 .main-card24 .cards24 {
+  width: calc(100% / 2 - 10px);
+  /* deleted this 2 lines  */
+  /* display: flex; */
+  /* flex-wrap: wrap;  */
+  /* ^^^^^^^^^^^^^^^ */
+  /* this line by Sahar, have to be added to other pages :)  */
+  /* added this bu mosab  */
+  display: grid;
+
+grid-template-columns: repeat(
+   auto-fill,
+    minmax(max(200px, calc((100% - 30px) / 3)), 1fr)
+  );
+  /* ^^^^^^^^^^^^^^^^^ */
+  grid-row-gap: 30px;
+  flex-wrap: wrap;
+  margin: 0 40px 40px 30px;
+  justify-content: space-between;
+}
+.main-card24 .cards24 .card24 {
+  /* deleted this */
+  /* width: calc(100% / 3 - 10px); */
+  background: #fff;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.4s ease;
+  margin-right: 10px;
+}
+.main-card24 .cards24 .card24:hover {
+  transform: translateY(-15px);
+}
+.cards24 .card24 .content24 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.cards24 .card24 .content24 .img-b14 {
+  height: 250px;
+  width: 250px;
+  border-radius: 10%;
+  padding: 3px;
+  background: #f3b547;
+  margin-bottom: 14px;
+}
+.card24 .content24 .img-b14 img {
+  height: 100%;
+  width: 100%;
+  border: 3px solid #ffff;
+  border-radius: 10%;
+  object-fit: cover;
+}
+.card24 .content24 .name2 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.container24-buisiness24 .button2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  position: absolute;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+@media (max-width: 768px) {
+  .main-card24 .cards24 .card24 {
+    margin: 20px 0 10px 0;
+    width: calc(100% / 2 - 10px);
+  }
+}
+@media (max-width: 600px) {
+  .main-card24 .cards24 .card24 {
+    /* margin: 20px 0 10px 0; */
+    width: 100%;
+  }
+}

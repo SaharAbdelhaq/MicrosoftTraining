@@ -1,0 +1,8 @@
+.SearchBar-filters-panel {
+  display: flex;
+
+  opacity: 1;
+  align-items: center;
+  justify-content: space-between;
+  width: 715px;
+}

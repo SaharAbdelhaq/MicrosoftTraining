@@ -1,0 +1,116 @@
+.container2-FAV{ 
+    margin-right: auto; margin-left: auto; width: 1200px;
+    align-content: center;
+    max-width: 1200px;
+    overflow: hidden;
+    padding: 60px 0;
+}
+.container2-FAV .main-cardFAV2{
+    alignment: center;
+    align-content: center;
+    justify-content: space-evenly;
+	width: 190%;
+    transition: 1s;
+}
+
+.HOHO{
+	align-content: center;
+}
+
+#two2:checked ~ .main-cardFAV2{
+    margin-left: -100%;
+}
+.container2-FAV .main-cardFAV2 .cardsFAV2{
+  width: calc(100% / 2 - 10px);
+  /* deleted this 2 lines  */
+  /* display: flex; */
+  /* flex-wrap: wrap;  */
+  /* ^^^^^^^^^^^^^^^ */
+  /* this line by Sahar, have to be added to other pages :)  */
+  /* added this bu mosab  */
+  display: grid;
+
+grid-template-columns: repeat(
+   auto-fill,
+    minmax(max(200px, calc((100% - 30px) / 3)), 1fr)
+  );
+  grid-row-gap: 30px;
+  flex-wrap: wrap;
+  margin: 0 40px 40px 30px;
+  justify-content: space-between;
+}
+.main-cardFAV2 .cardsFAV2 .cardFAV2{
+    /* width: calc(100% / 3 - 10px); */
+    background: #fff;
+    border-radius: 12px;
+	padding: 40PX;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.4s ease;
+    margin-right: 10px;
+}
+.main-cardFAV2 .cardsFAV2 .cardFAV2:hover{
+    transform: translateY(-15px);
+}
+.cardsFAV2 .cardFAV2 .contentFAV2{
+    width: 100%;
+     display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.cardsFAV2 .cardFAV2 .contentFAV2 .img-bFAV1{
+    height: 250px;
+    width: 250px;
+    border-radius: 10%;
+    padding: 3px;
+    background: #f3b547;
+    margin-bottom: 14px;
+}
+.cardFAV2 .contentFAV2 .img-bFAV1 img{
+    height: 100%;
+    width: 100%;
+    border: 3px solid #ffff;
+    border-radius: 10%;
+    object-fit: cover;
+}
+.cardFAV2 .contentFAV2 .nameFAV2{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.container2-FAV .buttonFAV2{
+    width: 100%;
+     display: flex;
+    justify-content: center; 
+    margin: 10px;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+
+@media (max-width: 768px) {
+    .main-cardFAV2 .cardsFAV2 .cardFAV2{
+        margin: 20px 0 10px 0;
+        width: calc(100% / 2 - 10px);
+    }
+}
+@media (max-width: 600px) {
+    .main-cardFAV2 .cardsFAV2 .cardFAV2{
+        /* margin: 20px 0 10px 0; */
+        width: 100%;
+    }
+}
+
+.removeingg-button {
+    background-color: rgb(166, 59, 14);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+  }

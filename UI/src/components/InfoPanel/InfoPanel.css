@@ -1,0 +1,15 @@
+.ProductOverview-info-div {
+  max-width: 650px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  margin-left: 50px;
+}
+@media (max-width: 1000px) {
+  .ProductOverview-info-div {
+    width: 100%;
+    margin-left: 0;
+  }
+}

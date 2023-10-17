@@ -1,0 +1,92 @@
+
+.testimonials{
+  padding: 40px 0;
+  background: #ffffff;
+  color: #393939;
+  text-align: center;
+}
+.inner{
+  max-width: 1200px;
+  margin: auto;
+  overflow:scroll;
+  padding: 0 20px;
+  
+}
+
+.border{
+  width: 160px;
+  height: 5px;
+  margin: 26px auto;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.col{
+  flex: 33.33%;
+  max-width: 33.33%;
+  box-sizing: border-box;
+  padding: 15px;
+}
+.testimonial{
+  background-color:  var(--blueColor);
+  border-radius: 35px;
+  padding: 30px;
+  color: #fff;
+  text-decoration: none !important;
+  transition: .5s;
+}
+.testimonial:hover{
+  box-shadow: 0 10px 10px rgba(0,0,0,0.7);
+  transform: translate(1%,-1%);
+}
+.testimonial img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.nameReportSec{
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 20px 0;
+  text-decoration: none !important;
+}
+a{
+  text-decoration: none;
+}
+.stars{
+  margin-bottom: 20px;
+}
+.testimonial .buttonReportSec{
+  width: 100px;
+  padding: 10px 10px;
+  display: inline-block;
+  height: 25px;
+  border-radius: 25px;
+  background-color: #fff;
+  color: #003f62;
+  font-size:large;
+  cursor: pointer;
+  transition: .5s;
+}
+.buttonReportSec:hover{
+  background-color: #003f62;
+  width:110px ;
+  color: #fff;
+}
+
+@media screen and (max-width:960px) {
+.col{
+  flex: 100%;
+  max-width: 80%;
+}
+}
+
+@media screen and (max-width:600px) {
+.col{
+  flex: 100%;
+  max-width: 100%;
+}
+}

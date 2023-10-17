@@ -1,0 +1,91 @@
+
+.stars {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .container{
+    align-items: center;
+    overflow-y: scroll;
+  }
+  
+  .comment-list {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 20px;
+    width: 500px;
+    border: 1px solid black;
+    height: 250px;
+    overflow-x: scroll;
+  }
+  
+  .comment {
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .comment-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .comment-date {
+    font-size: 14px;
+  }
+  
+  .comment-rating {
+    display: flex;
+    align-items: center;
+  }
+  
+  .star {
+    color: #a9a9a9;
+  }
+  
+  .star-filled {
+    color: #FFBA55;
+  }
+
+  
+  .textarea {
+    width: 95%;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-left: 1px;
+    border: none;
+    resize: none;
+  }
+  
+  .button1[type='submit']:hover {
+    background-color: #FFA040;
+  }
+  .form1{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid grey;
+    border-radius: 5px;
+  }
+  .formComponent{
+    align-items: center !important;
+    position: static;
+    
+  }
+  .button1{
+    margin-bottom: 10px;
+    background-color: #FFBA55;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }

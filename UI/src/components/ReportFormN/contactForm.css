@@ -1,0 +1,46 @@
+@import "https://fonts.googleapis.com/css?family=Raleway";
+
+.sahar-contact-h {
+  margin: 0;
+}
+
+.ContactForm { 
+  display: block;
+  border: 6px solid rgb(74, 29, 24); 
+  padding: 2em;
+  width: 400px;
+  height: 400px;
+  text-align: center;
+  background: #fff;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+
+.text-field223 {
+  margin: 0.8em auto;
+  font-family: inherit; 
+  text-transform: inherit; 
+  font-size: inherit;
+  display: block; 
+  width: 280px; 
+  padding: 0.4em;
+}
+
+.text-area223 {
+  height: 80px; 
+  resize: none; 
+}
+
+.form-btn223 { 
+  width: 140px;
+  display: inline-block;
+  background: teal;
+  color: #fff;
+  font-weight: 100;
+  font-size: 1.2em;
+  border: none;
+  height: 30px;
+}

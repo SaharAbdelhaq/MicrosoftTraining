@@ -1,0 +1,13 @@
+.SearchBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(155deg, #1d3557, #2a9d8f, #0077b6);
+}
+.SearchBar-icon {
+  height: 60px;
+}
+.SearchBar-left-section {
+  display: flex;
+  align-items: center;
+}

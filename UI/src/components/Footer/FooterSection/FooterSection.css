@@ -1,0 +1,46 @@
+.footer-section {
+  text-align: start;
+}
+.footer-section-ul {
+  padding-left: 0;
+  list-style-position: inside;
+}
+
+.footer-section-title {
+  /* width: 88px;
+  height: 29px; */
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19.38px;
+  line-height: 29px;
+  /* identical to box height */
+
+  color: #1b5a7d;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.footer-section-subtitle {
+  /* width: 86px;
+height: 29px; */
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19.38px;
+  line-height: 29px;
+  /* identical to box height */
+
+  color: #1b5a7d;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}

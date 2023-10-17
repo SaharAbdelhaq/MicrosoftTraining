@@ -1,0 +1,131 @@
+.container2-Tobuy{ 
+    margin-right: auto; margin-left: auto; width: 1200px;
+    align-content: center;
+    max-width: 1200px;
+    overflow: hidden;
+    padding: 60px 0;
+}
+.container2-Tobuy .main-cardTobuy2{
+    alignment: center;
+    align-content: center;
+    justify-content: space-evenly;
+	width: 190%;
+    transition: 1s;
+}
+
+.container2-Tobuy .main-cardTobuy2 .cardsTobuy2{
+    width: calc(100% / 2 - 10px);
+    
+    /* this line by Sahar, have to be added to other pages :)  */
+    /* added this bu mosab  */
+    display: grid;
+  
+  grid-template-columns: repeat(
+     auto-fill,
+      minmax(max(200px, calc((100% - 30px) / 3)), 1fr)
+    );
+    grid-row-gap: 30px;
+    flex-wrap: wrap;
+    margin: 0 40px 40px 30px;
+    justify-content: space-between;
+}
+
+.main-cardTobuy2 .cardsTobuy2 .cardTobuy2{
+    /* width: calc(100% / 3 - 10px); */
+    background: #fff;
+    border-radius: 12px;
+	padding: 40PX;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.4s ease;
+    margin-right: 10px;
+}
+
+
+.main-cardTobuy2 .cardsTobuy2 .cardTobuy2:hover{
+    transform: translateY(-15px);
+}
+
+.cardsTobuy2 .cardTobuy2 .contentTobuy2{
+    width: 100%;
+     display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+
+.cardsTobuy2 .cardTobuy2 .contentTobuy2 .img-bTobuy1{
+    height: 250px;
+    width: 250px;
+    border-radius: 10%;
+    padding: 3px;
+    background: #f3b547;
+    margin-bottom: 14px;
+}
+
+.cardTobuy2 .contentTobuy2 .img-bTobuy1 img{
+    height: 100%;
+    width: 100%;
+    border: 3px solid #ffff;
+    border-radius: 10%;
+    object-fit: cover;
+}
+
+
+.cardTobuy2 .contentTobuy2 .nameTobuy2{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.container2-Tobuy .buttonTobuy2{
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    margin: 10px;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+
+
+.heart-btn {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /*
+  background-color: transparent; 
+  border: none; 
+  color: red; 
+  font-size: 24px; 
+  cursor: pointer;
+  */
+  
+  .heart-btn i {
+    margin-right: 5px;
+  }
+  
+
+  .chat-btn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .chat-btn svg {
+    margin-right: 5px;
+  }
+  

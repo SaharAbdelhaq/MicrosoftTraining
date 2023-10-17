@@ -1,0 +1,13 @@
+.Layout-main {
+  display: flex;
+}
+.sidebar-substitute {
+  /* height: 100%; */
+  width: 13vw;
+  min-height: 400px;
+  min-width: 110px;
+  background-color: #1b5a7d;
+}
+.sidebar-container {
+  margin-right: 20px;
+}

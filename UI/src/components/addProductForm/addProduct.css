@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+.product-div22 {
+    margin: 0 auto;
+    width: fit-content;
+    
+  }
+  
+.main-wrapper22{
+    min-height: 100vh;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.container22{
+    width: auto;
+    margin-left: 250px;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+.product-div22{
+    padding: 1rem 0;
+    padding: 2rem 0;
+    background-color: red;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #fff;
+    border-radius: 3px;
+    column-gap: 10px;
+}
+.product-div-left22{
+    padding: 20px;
+}
+.product-div-right22{
+    padding: 20px;
+}
+.img-container22 img{
+    width: 500px;
+    margin: 0 auto;
+}
+.hover-container22{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 32px;
+}
+.hover-container22 div{
+    border: 2px solid rgba(252, 160, 175, 0.7);
+    padding: 1rem;
+    border-radius: 3px;
+    margin: 0 4px 8px 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.active22{
+    border-color: rgb(255, 145, 163)!important;
+}
+.hover-container22 div:hover{
+    border-color: rgb(255, 145, 163);
+}
+.hover-container22 div img{
+    width: 50px;
+    cursor: pointer;
+}
+.product-div-right22 span{
+    display: block;
+}
+.product-name22{
+    font-size: 16px;
+    margin-bottom: 22px;
+    letter-spacing: 1px;
+    opacity: 0.9;
+    box-shadow: 0 2px 4px #1d3557; /* add shadow */
+    padding: 10px; /* add some padding for better visual appearance */
+    border: 1px solid rgba(255, 255, 255, 0.)#3a3838;
+
+}
+.product-price22 {
+    font-weight: 700;
+    font-size: 16px;
+    opacity: 0.9;
+    box-shadow: 0 2px 4px #1d3557; /* add shadow */
+    padding: 10px; /* add some padding for better visual appearance */
+}
+
+
+.product-description22{
+    font-weight: 16px;
+    line-height: 1.6;
+    opacity: 0.9;
+    margin-top: 22px;
+    box-shadow: 0 2px 4px #1d3557; /* add shadow */
+    padding: 10px; /* add some padding for better visual appearance */
+
+}
+.btn-groups22{
+    margin-top: 22px;
+    align-items: center;
+}
+
+.btn-groups22 button{
+    display: inline-block;
+    font-size: 16px;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.btn-groups22 button .fas{
+    margin-right: 8px;
+}
+.add-cart-btn22{
+    background-color: #1d3557;
+    border: 2px solid hsl(37, 100%, 50%);
+}
+.add-cart-btn:hover22{
+    background-color: #fff;
+    color: #1d3557;
+}
+.buy-now-btn22{
+    background-color: #1d3557;
+    border: 2px solid #1d3557;
+    
+}
+.buy-now-btn22:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+@media screen and (max-width: 992px){
+    .product-div22{
+        grid-template-columns: 100%;
+    }
+    .product-div-right22{
+        text-align: center;
+    }
+    .product-rating22{
+        justify-content: center;
+    }
+    .product-description22{
+        max-width: 400px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .btn-groups22 button{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+
+.product-description-input22 {
+    resize: none;
+    width: 100%;
+    height: 200px; /* or any other suitable height */
+  }
+
+
+  .product-label22 {
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    opacity: 0.9;
+  }
+  
+  .remove-btn22{
+    background-color: #FF9F00;
+    border: 2px solid #FF9F00;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 10px 10px;
+
+}
+.remove-btn22:hover{
+    background-color: #fff;
+    color: #FF9F00;
+}
+
+.upload-btn22{
+    background-color: #FF9F00;
+    border: 2px solid #FF9F00;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 10px 10px;
+
+}
+
+.upload-btn22:hover{
+    background-color: #fff;
+    color: #FF9F00;
+}
+
+.btn-groups122 button{
+    display: inline-block;
+    font-size: 16px;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-groups122 button .fas{
+    margin-left: 10px;
+}
+.selected-images {
+    display: inline-block;
+    margin-left: 5px;
+  }
+  
+  .selected-image {
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 200px;
+    height: 150px;
+    display: flex;
+    margin-top: 10px;
+  }
+
+
